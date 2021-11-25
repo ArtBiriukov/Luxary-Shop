@@ -1,0 +1,41 @@
+/* Breadcrumb */
+
+.Breadcrumb
+  background-color: #F8F3F4
+  display: flex
+  justify-content: space-between
+  align-items: center
+  overflow-x: hidden
+
+  &__heading
+    padding-top: 59px
+    padding-bottom: 60px
+    font-size: 24px
+    line-height: 29px
+    color: $main_color
+
+.navigation
+  display: flex
+  list-style: none
+
+  &__link
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: $dark_grey
+    text-transform: uppercase
+    transition: all 0.3s ease
+    &:hover
+      color: $main_color
+
+  &__item
+    &:not(:last-child)::after
+      content: '/'
+      margin-left: 4px
+      margin-right: 4px
+      color: $dark_grey
+
+    &:last-child a
+      font-weight: bold
+      color: $main_color

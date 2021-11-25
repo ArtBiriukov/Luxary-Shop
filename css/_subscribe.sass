@@ -1,0 +1,76 @@
+/* Subscribe */
+
+.subscribe
+  padding-top: 97px
+  padding-bottom: 126px
+  background: rgba(244, 244, 244, 0.7)
+  background-image: url(../img/subscribe_bg.jpg)
+  background-position: center bottom
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 360px
+
+    &__text
+      padding-top: 30px
+      font-size: 20px
+      line-height: 24px
+      text-align: center
+      color: $color_dark
+
+  &__item
+    margin-right: 104px
+    text-align: center
+
+    &__heading
+      font-weight: bold
+      font-size: 24px
+      line-height: 40px
+      color: $color_dark
+
+    &__text
+      font-size: 18px
+      line-height: 30px
+      color: $color_dark
+      padding-bottom: 37px
+
+    &__form
+      display: flex
+      align-items: center
+
+  &__input
+    background-color: #E1E1E1
+    width: 100%
+    height: 49px
+    padding-left: 22px
+    padding-right: 22px
+    border-radius: 25px 0 0 25px
+    border: none
+    font-size: 14px
+    line-height: 17px
+    display: flex
+    align-items: center
+    color: $color_dark
+    opacity: 0.67
+
+  &__btn
+    font-size: 14px
+    line-height: 17px
+    color: #FFF
+    padding: 17px 20px 15px
+    background-color: $main_color
+    border-radius: 0 25px 25px 0
+    border: none
+    cursor: pointer
+    transition: all 0.3s ease
+    &:hover
+      background-color: $hover_color
+

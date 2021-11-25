@@ -1,0 +1,175 @@
+.basket
+  display: flex
+  justify-content: space-between
+  padding-top: 96px
+  padding-bottom: 128px
+  background: #fff
+
+  &__cards
+    display: flex
+    flex-direction: column
+
+  &__buttons
+    display: flex
+    justify-content: space-between
+
+  &__btn
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    padding: 17px 39px
+    border: 1px solid #A4A4A4
+    transition: all 0.5s ease
+    &:hover
+      background: $hover_color
+      color: #fff
+      border: 1px solid $hover_color
+
+  &__card
+    display: flex
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    margin-bottom: 40px
+    &:nth-last-child(2)
+      margin-bottom: 72px
+
+    &__img
+      width: 262px
+      display: block
+
+    &__content
+      padding: 22px 22px 62px 31px
+      box-sizing: border-box
+
+    &__heading
+      display: flex
+
+    & h2
+      font-size: 24px
+      font-weight: normal
+      line-height: 29px
+      color: #222222
+      width: 210px
+      padding-bottom: 42px
+      transition: all 0.3s ease
+      &:hover
+        color: $hover_color
+
+    &__icon
+      margin-top: 6px
+      margin-left: 109px
+      cursor: pointer
+      &:hover path
+        transition: all 0.3s ease
+        fill: $hover_color
+
+    &__selection
+      font-size: 22px
+      line-height: 26px
+      color: #575757
+
+    &__roster
+      list-style: none
+
+    &__items:not(:last-child)
+      margin-bottom: 6px
+
+    &__price
+      color: $main_color
+
+    &__quantity
+      font-size: 18px
+      line-height: 22px
+      color: #656565
+      margin-left: 24px
+      border: 1px solid #EAEAEA
+      padding: 2px 14px
+      width: 44px
+      box-sizing: border-box
+
+  &__form
+    width: 360px
+    &__heading
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      color: $backgroun__black
+      padding-bottom: 20px
+
+    &__input
+      padding: 13px 17px 16px 17px
+      box-sizing: border-box
+      border: 1px solid #A4A4A4
+      margin-bottom: 27px
+      font-weight: 300
+      font-size: 13px
+      line-height: 16px
+      color: #B1B1B1
+      width: 360px
+
+      &:focus
+        box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.2)
+        color: #000
+
+      &:nth-last-child(2)
+        margin-bottom: 23px
+
+    &__btn
+      display: inline-block
+      border: 1px solid #A4A4A4
+      font-weight: 300
+      font-size: 11px
+      line-height: 13px
+      color: #4A4A4A
+      padding: 10px 14px 12px 15px
+      transition: all 0.5s ease
+
+      &:hover
+        background: $hover_color
+        color: #fff
+        border: 1px solid $hover_color
+
+  &__checkout
+    margin-top: 57px
+    background: #F5F3F3
+    padding: 39px 34px 42px 44px
+    box-sizing: border-box
+    width: 360px
+    &__line
+      height: 1px
+      background: #E2E2E2
+      width: 275px
+      margin-top: 21px
+      margin-bottom: 17px
+    &__btn
+      display: block
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      color: #FFFFFF
+      background: $main_color
+      padding: 15px 43px 16px 41px
+      transition: all 0.5s ease
+      &:hover
+        background: $hover_color
+
+.sub
+  padding-bottom: 12px
+  text-align: right
+  &__heading
+    font-size: 11px
+    line-height: 13px
+    color: #4A4A4A
+  &__price
+    margin-left: 25px
+.grand
+  text-align: right
+  &__heading
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: $backgroun__black
+  &__price
+    font-weight: bold
+    color: $main_color
+    margin-left: 25px
