@@ -2060,6 +2060,9 @@ footer .footer__icon:hover .icons-in {
 }
 
 @media (max-width: 767px) {
+  .top__form-input {
+    display: none;
+  }
   .center {
     padding-right: calc(50% - 180px);
     padding-left: calc(50% - 180px);
@@ -2076,6 +2079,9 @@ footer .footer__icon:hover .icons-in {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .promo__content {
+    margin-left: 0;
   }
   .promo__img {
     display: none;
