@@ -1,25 +1,26 @@
 /* Footer */
-
 footer
   background-color: $color_dark
   display: flex
   align-items: center
   justify-content: space-between
 
-  .footer__text
+.footer
+
+  &__text
     padding-top: 30px
     padding-bottom: 30px
     font-size: 16px
     line-height: 19px
     color: #FBFBFB
 
-  .footer__icons:not(:last-child)
+  &__icons:not(:last-child)
     margin-right: 7px
 
-  .footer__icon:hover path
+  &__icon:hover path
     transition: all 0.3s ease
     fill: $main_color
 
-  .footer__icon:hover .icons-in
+  &__icon:hover .icons-in
     transition: all 0.3s ease
     fill: #fff

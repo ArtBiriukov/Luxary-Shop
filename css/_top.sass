@@ -1,8 +1,6 @@
 .top
   background-color: $backgroun__black
-  display: flex
-  justify-content: space-between
-  align-items: center
+  @include displayFlex
   position: relative
   padding-top: 19px
   padding-bottom: 18px
@@ -58,7 +56,7 @@
   display: none
 
 #switch:checked ~ .menu__burger
-  right: -1000px
+  transform: translateX(1000px)
 
 .red_circle
   position: absolute;

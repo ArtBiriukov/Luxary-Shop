@@ -118,14 +118,14 @@
       </a>
 
       <div class="red_circle">
-        <span>1</span>
+        <span>2</span>
       </div>
     </div>
   </header>
 
-  <section class="Breadcrumb center">
-    <div class="Breadcrumb__left tracking-in-expand-fwd">
-      <h2 class="Breadcrumb__heading">SHOPPING CART</h2>
+  <section class="breadcrumb center">
+    <div class="breadcrumb__left tracking-in-expand-fwd">
+      <h2 class="breadcrumb__heading">SHOPPING CART</h2>
     </div>
   </section>
 
@@ -156,7 +156,7 @@
               <li class="basket__card__items"><span>Size: </span><span class="basket__card__size">Xl</span></li>
               <li class="basket__card__items"><span>Quantity:
                   <input class="basket__card__quantity" type="text" name="card-quantity" maxlength="1"
-                    id="card-quantity" value="2" onfocus="this.value=''">
+                    id="card-quantity" placeholder="1">
             </ul>
           </div>
         </div>
@@ -185,7 +185,7 @@
               <li class="basket__card__items"><span>Size: </span><span class="basket__card__size">Xl</span></li>
               <li class="basket__card__items"><span>Quantity: </span>
                 <input class="basket__card__quantity" type="text" name="card-quantity" maxlength="1" id="card-quantity"
-                  value="2" onfocus="this.value=''">
+                  placeholder="1">
             </ul>
           </div>
         </div>
@@ -201,15 +201,12 @@
         <div class="basket__form__heading">
           SHIPPING ADRESS
         </div>
-        <input class="basket__form__input" type="text" name="country" id="country" value="Country"
-          onfocus="this.value=''">
-        <input class="basket__form__input" type="text" name="state" id="state" value="State" onfocus="this.value=''">
-        <input class="basket__form__input" type="text" name="postcode" id="postcode" value="Postcode / Zip"
-          onfocus="this.value=''">
+        <input class="basket__form__input" type="text" name="country" id="country" placeholder="Country">
+        <input class="basket__form__input" type="text" name="state" id="state" placeholder="State">
+        <input class="basket__form__input" type="text" name="postcode" id="postcode" placeholder="Postcode / Zip">
 
         <a href="#" class="basket__form__btn">GET A QUOTE</a>
       </form>
-
 
       <div class="basket__checkout">
         <div class="sub">
@@ -246,7 +243,7 @@
         FOR OUR NEWLETTER AND PROMOTION
       </p>
       <form class="subscribe__item__form" action="#">
-        <input type="email" class="subscribe__input" placeholder="Ваш E-mail" onfocus="this.value=''" required>
+        <input type="email" class="subscribe__input" name="email" placeholder="Ваш E-mail">
         <input type="submit" class="subscribe__btn" value="Subscribe">
       </form>
     </div>

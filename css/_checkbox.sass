@@ -1,83 +1,82 @@
 /* setup checkbox and radio */
-
 .checkbox
   position: absolute
   z-index: -1
   opacity: 0
 
-.checkbox + label
-  position: relative
-  cursor: pointer
+  & + label
+    position: relative
+    cursor: pointer
 
-  &:before
-    content: ''
-    position: absolute
-    top: 4px
-    left: 0px
-    width: 12px
-    height: 12px
-    border: 1px solid #EBEBEB
-    background: #FFF
-    transition: all 0.2s ease
+    &:before
+      content: ''
+      position: absolute
+      top: 4px
+      left: 0px
+      width: 12px
+      height: 12px
+      border: 1px solid #EBEBEB
+      background: #FFF
+      transition: all 0.2s ease
 
-  &:after
-    content: ''
-    position: absolute
-    top: 6px
-    left: 2px
-    width: 10px
-    height: 10px
-    background-image: url(../img/check-mark.svg)
-    background-repeat: no-repeat
-    background-size: contain
-    background-position: center center
-    opacity: 0
-    transition: all 0.2s ease-in
+    &:after
+      content: ''
+      position: absolute
+      top: 6px
+      left: 2px
+      width: 10px
+      height: 10px
+      background-image: url(../img/check-mark.svg)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center center
+      opacity: 0
+      transition: all 0.2s ease-in
 
-.checkbox:checked + label:before
-  border: 1px solid $main_color
+  &:checked + label:before
+    border: 1px solid $main_color
 
-.checkbox:checked + label:after
-  opacity: 1
+  &:checked + label:after
+    opacity: 1
 
 .radio
   position: absolute
   z-index: -1
   opacity: 0
 
-.radio + label
-  position: relative
-  cursor: pointer
+  & + label
+    position: relative
+    cursor: pointer
 
-  &:before
-    content: ''
-    position: absolute
-    top: 0px
-    left: 0px
-    width: 17px
-    height: 17px
-    border: 1px solid #A4A4A4
-    border-radius: 50%
-    transition: all 0.2s ease
+    &:before
+      content: ''
+      position: absolute
+      top: 0px
+      left: 0px
+      width: 17px
+      height: 17px
+      border: 1px solid #A4A4A4
+      border-radius: 50%
+      transition: all 0.2s ease
 
-  &:after
-    content: ''
-    position: absolute
-    top: 3px
-    left: 3px
-    width: 13px
-    height: 13px
-    background: $main_color
-    border-radius: 50%
-    opacity: 0
-    transition: all 0.2s ease-in
+    &:after
+      content: ''
+      position: absolute
+      top: 3px
+      left: 3px
+      width: 13px
+      height: 13px
+      background: $main_color
+      border-radius: 50%
+      opacity: 0
+      transition: all 0.2s ease-in
 
-.radio:checked + label:before
-  border: 1px solid $main_color
+  &:checked + label:before
+    border: 1px solid $main_color
 
-.radio:checked + label:after
-  opacity: 1
+  &:checked + label:after
+    opacity: 1
 
-.radio:checked + label .reg__form__l-title
-  color: $hover_color
-  font-weight: bold
+  &:checked + label .reg__form__l-title
+    color: $hover_color
+    font-weight: bold

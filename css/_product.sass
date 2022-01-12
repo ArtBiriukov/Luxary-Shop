@@ -15,6 +15,13 @@
     color: #9F9F9F
     padding-bottom: 48px
 
+    &-about
+      font-weight: 300
+      font-size: 14px
+      line-height: 17px
+      color: #5D5D5D
+      padding-bottom: 18px
+
   &__items
     display: flex
     flex-wrap: wrap
@@ -78,13 +85,6 @@
     &:hover
       color: $main_color
 
-  &__text-about
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    color: #5D5D5D
-    padding-bottom: 18px
-
   &__price
     font-size: 16px
     line-height: 19px
@@ -106,129 +106,129 @@
       color: #fff
       background-color: $hover_color
   
-.product__slider
-  background-color: #F7F7F7
-  border: 1px solid #EAEAEA
+  &__slider
+    background-color: #F7F7F7
+    border: 1px solid #EAEAEA
 
-  &__img
-    padding-left: calc(50% - 300px)
-    padding-right: calc(50% - 300px)
-    padding-top: 11px
-    padding-bottom: 42px
+    &__img
+      padding-left: calc(50% - 300px)
+      padding-right: calc(50% - 300px)
+      padding-top: 11px
+      padding-bottom: 42px
 
-  &__control
+    &__control
+      position: relative
+
+      &-prew
+        margin-top: 365px
+        padding: 13px 17px
+        border: 0
+        background: rgba(42, 42, 42, 0.15)
+        position: absolute
+        left: 0px
+        cursor: pointer
+
+        &:hover path
+          transition: all 0.3s ease
+          fill: $hover_color
+
+      &-next
+        margin-top: 365px
+        padding: 13px 17px
+        border: 0
+        background: rgba(42, 42, 42, 0.15)
+        position: absolute
+        right: 0px
+        cursor: pointer
+
+        &:hover path
+          transition: all 0.3s ease
+          fill: $hover_color
+
+  &-description
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: white
+    margin-top: -65px
+    border: 1px solid #EAEAEA
+    margin-right: calc(50% - 570px)
+    margin-left: calc(50% - 570px)
+    padding: 64px 250px
     position: relative
 
-    &-prew
-      margin-top: 365px
-      padding: 13px 17px
-      border: 0
-      background: rgba(42, 42, 42, 0.15)
-      position: absolute
-      left: 0px
-      cursor: pointer
+    &__header
+      font-weight: 300
+      font-size: 14px
+      line-height: 17px
+      color: $main_color
+      padding-bottom: 12px
+      text-align: center
+
+    &__title
+      font-weight: 300
+      font-size: 18px
+      line-height: 22px
+      color: #4D4D4D
+      padding-bottom: 48px
+      padding-top: 5px
+      text-align: center
+
+    &__text
+      font-weight: 300
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+      color: #5E5E5E
+      padding-bottom: 32px
+      padding-left: calc(50% - 277px)
+      padding-right: calc(50% - 277px)
+
+    &__price
+      display: block
+      text-align: center
+      font-weight: 300
+      font-size: 24px
+      line-height: 29px
+      color: $main_color
+
+    &__sort
+      padding-top: 0px
+      justify-content: center
+
+    &__btn
+      display: flex
+      margin-top: 48px
+      font-size: 16px
+      line-height: 19px
+      color: $main_color
+      padding: 15px 56px 14px 33px
+      border: 1px solid $main_color
+      transition: all 0.3s ease
+
+      &:hover
+        background-color: $main_color
+        color: #fff
 
       &:hover path
-        transition: all 0.3s ease
-        fill: $hover_color
+        transition: all .3s ease
+        fill: #fff
 
-    &-next
-      margin-top: 365px
-      padding: 13px 17px
-      border: 0
-      background: rgba(42, 42, 42, 0.15)
-      position: absolute
-      right: 0px
-      cursor: pointer
+      &_img
+        padding-right: 14px
 
-      &:hover path
-        transition: all 0.3s ease
-        fill: $hover_color
-
-.product-description
-  display: flex
-  flex-direction: column
-  align-items: center
-  background-color: white
-  margin-top: -65px
-  border: 1px solid #EAEAEA
-  margin-right: calc(50% - 570px)
-  margin-left: calc(50% - 570px)
-  padding: 64px 250px
-  position: relative
-
-  &__header
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    color: $main_color
-    padding-bottom: 12px
-    text-align: center
-
-  &__title
-    font-weight: 300
-    font-size: 18px
-    line-height: 22px
-    color: #4D4D4D
-    padding-bottom: 48px
-    padding-top: 5px
-    text-align: center
-
-  &__text
-    font-weight: 300
-    font-size: 14px
-    line-height: 17px
-    text-align: center
-    color: #5E5E5E
-    padding-bottom: 32px
-    padding-left: calc(50% - 277px)
-    padding-right: calc(50% - 277px)
-
-  &__price
-    display: block
-    text-align: center
-    font-weight: 300
-    font-size: 24px
-    line-height: 29px
-    color: $main_color
-
-  &__sort
-    padding-top: 0px
-    justify-content: center
-
-  &__btn
-    display: flex
-    margin-top: 48px
-    font-size: 16px
-    line-height: 19px
-    color: $main_color
-    padding: 15px 56px 14px 33px
-    border: 1px solid $main_color
-    transition: all 0.3s ease
-
-    &:hover
+    &__line_red
       background-color: $main_color
-      color: #fff
+      height: 3px
+      width: 63px
+      border-top: none
 
-    &:hover path
-      transition: all .3s ease
-      fill: #fff
-
-    &_img
-      padding-right: 14px
-
-  &__line_red
-    background-color: $main_color
-    height: 3px
-    width: 63px
-    border-top: none
-
-  &__line_greay
-    background-color: #EAEAEA
-    height: 1px
-    width: 641px
-    margin-top: 65px
-    margin-bottom: 72px
+    &__line_greay
+      background-color: #EAEAEA
+      height: 1px
+      width: 641px
+      margin-top: 65px
+      margin-bottom: 72px
 
 .another__products
   padding-top: 128px

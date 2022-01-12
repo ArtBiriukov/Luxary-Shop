@@ -1,68 +1,71 @@
-.menu__burger
-  position: fixed;
-  background-color: #fff
-  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-  z-index: 1
-  width: 232px
-  padding: 16px 17px 116px 33px
-  top: 75px
-  right: 0px
-  transition: right .5s ease
+.menu
+  &__burger
+    position: fixed;
+    background-color: #fff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    z-index: 1
+    width: 232px
+    padding: 16px 17px 116px 33px
+    top: 78px
+    right: 0px
+    transform: translateX(0)
+    transition: transform .5s ease
 
-.menu__close
-  display: flex
-  justify-content: flex-end
+  &__close
+    display: flex
+    justify-content: flex-end
 
-.menu__close__img
-  cursor: pointer
-  transition: all .3s ease-in
+  &__close__img
+    cursor: pointer
+    transition: all .3s ease-in
 
-  &:hover path
-    fill: $hover_color
+    &:hover path
+      fill: $hover_color
 
-.menu__head
-  padding-bottom: 25px
+  &__head
+    padding-bottom: 25px
 
-.menu__header
-  font-weight: bold
-  font-size: 14px
-  line-height: 17px
-  color: #000
-  text-transform: uppercase
-  transition: all .3s ease-in
+  &__header
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    text-transform: uppercase
+    transition: all .3s ease-in
 
-  &:hover
-    color: $hover_color
+    &:hover
+      color: $hover_color
 
-.menu__items
-  list-style: none
-  padding-bottom: 20px
+  &__items
+    list-style: none
+    padding-bottom: 20px
 
-.menu__title
-  padding-bottom: 11px
-  font-weight: normal
-  font-size: 14px
+  &__title
+    padding-bottom: 11px
+    font-weight: normal
+    font-size: 14px
 
-.menu__title__link
-  color: $main_color
-  transition: all .3s ease-in
-  &:hover
+    &__link
+      color: $main_color
+      transition: all .3s ease-in
+
+      &:hover
+          color: $dark_grey
+
+  &__item
     color: $dark_grey
+    list-style: none
+    padding-left: 21px
+    padding-bottom: 11px
 
-.menu__item
-  color: $dark_grey
-  list-style: none
-  padding-left: 21px
-  padding-bottom: 11px
+    &:last-child
+      padding-bottom: 0px
 
-  &:last-child
-    padding-bottom: 0px
-
-.menu__link
-  color: $dark_grey
-  transition: all .3s ease-in
-  &:hover
-    color: $hover_color
+  &__link
+    color: $dark_grey
+    transition: all .3s ease-in
+    &:hover
+      color: $hover_color
 
 .mob__icons
   display: none
