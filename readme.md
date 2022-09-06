@@ -6,7 +6,7 @@
 так же сайт состоит из нескольких страниц (многостраницный сайт).
 
 ## Демо
-https://artBiryukov.github.io/Luxary-Shop
+[Ссылка на проект](https://artBiriukov.github.io/Luxary-Shop)
 
 ## Технологии
 <ul>
